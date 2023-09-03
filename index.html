@@ -10,12 +10,12 @@
 <body>
   <header class="header">
     <div class="container">
-      <a class="header__logo" href="#">
+      <a class="logo header__logo" href="#">
         <img src="images/logo.svg" alt="Logotype Lionic company">
       </a>
 
-      <nav class="header__nav">
-        <ul class="reset-list header__list">
+      <nav class="header__nav" aria-label="main-navigation">
+        <ul class="list-reset header__list">
           <li class="header__item action">
             <a href="#" class="header__link">Home</a>
           </li>
@@ -37,9 +37,10 @@
         </ul>
       </nav>
 
-      <button class="btn reset-btn header__btn">Free trial</button>
+      <button class="btn btn-reset header__btn">Free trial</button>
     </div>
   </header>
+
   <main class="main">
     <section class="hero" id="hero">
       <div class="container">
@@ -52,7 +53,7 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut&nbsp;laoreet dolore.
           </p>
 
-          <button class="btn reset-btn hero__btn">Free 30&nbsp;day trial</button>
+          <button class="btn btn-reset hero__btn">Free 30&nbsp;day trial</button>
 
           <span class="hero__secure">SSL secured connection</span>
         </div>
@@ -270,10 +271,127 @@
       </div>
     </section>
 
-    <section class="contacts" id="contacts"></section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="section__title contacts__title">Contacts</h2>
+        <address class="contacts__address">
+          <ul class="contacts__items">
+            <li class="contacts__item">
+              <strong class="contacts__caption">Visit us</strong>
+              <div class="contacts__descr">
+                Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit.
+              </div>
+            </li>
 
-    <section class="join-us" id="join-us"></section>
+            <li class="contacts__item">
+              <strong class="contacts__caption">Call us</strong>
+              <div class="contacts__descr">
+                <a class="contacts__link" href="tel:+79876543210">+7 (987) 654-32-10</a>
+                <a class="contacts__link" href="tel:+71234567890">+7 (123) 456-78-90</a>
+              </div>
+            </li>
+
+            <li class="contacts__item">
+              <strong class="contacts__caption">Email us</strong>
+              <div class="contacts__descr">
+                <a class="contacts__link" href="mailto:example@example.com">example@example.com</a>
+                <a class="contacts__link" href="mailto:example@example.com">example@example.com</a>
+              </div>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </section>
+
+    <section class="join-us" id="join-us">
+      <div class="container">
+        <h2 class="section__title join-us__title">
+          Join us
+        </h2>
+        <p class="section__descr join-us__descr">
+          Take control of&nbsp;your paid subscriptions today!
+        </p>
+
+        <form class="join-us__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <div class="form__top">
+            <div class="form__left">
+              <label>
+                <input class="form__input" type="text" name="name" placeholder="Name" required>
+              </label>
+              <label>
+                <input class="form__input" type="email" name="email" placeholder="E-mail" required>
+              </label>
+              <label>
+                <input class="form__input" type="tel" name="phone" placeholder="Phone" required>
+              </label>
+              <select name="country">
+                <option value="Country" disabled selected>Country</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Spain">Spain</option>
+                <option value="Estonia">Estonia</option>
+              </select>
+            </div>
+            <div class="form__right">
+              <textarea class="form__textarea" name="comment" placeholder="Comment"></textarea>
+            </div>
+          </div>
+          <div class="form__bottom">
+            <div class="form__wrapper">
+              <button class="btn-reset btn form__btn">Get started</button>
+              <label>
+                <input type="checkbox" required>
+                I&nbsp;agree with the <a href="#">user agreement</a>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer class="footer"></footer>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-left">
+        <a class="logo footer__logo" href="#">
+          <img src="images/logo.svg" alt="Logotype Lionic company">
+        </a>
+        <small class="footer__copyright">
+          Copyright &copy;2017. All Right Reserved
+        </small>
+      </div>
+      <div class="footer-right">
+        <nav class="footer__nav" aria-label="footer-nav">
+          <ul class="list-reset footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">About us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Privacy policy</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Terms condition</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list-reset social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="twitter link"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--linkedin" href="#" aria-label="linkedin link"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--mail" href="#" aria-label="mail link"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
