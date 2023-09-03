@@ -9,13 +9,13 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container flex header__container">
       <a class="logo header__logo" href="#">
         <img src="images/logo.svg" alt="Logotype Lionic company">
       </a>
 
       <nav class="header__nav" aria-label="main-navigation">
-        <ul class="list-reset header__list">
+        <ul class="list-reset header__list flex">
           <li class="header__item action">
             <a href="#" class="header__link">Home</a>
           </li>
@@ -42,9 +42,9 @@
   </header>
 
   <main class="main">
-    <section class="hero" id="hero">
+    <section class="section-offset hero" id="hero">
       <div class="container">
-        <div class="hero__content">
+        <div class="hero__content flex">
           <h1 class="hero__title">
             This is&nbsp;simply a&nbsp;smarter way to&nbsp;make your legal online
           </h1>
@@ -53,20 +53,21 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut&nbsp;laoreet dolore.
           </p>
 
-          <button class="btn btn-reset hero__btn">Free 30&nbsp;day trial</button>
-
-          <span class="hero__secure">SSL secured connection</span>
+          <div class="hero__wrapper flex">
+            <button class="btn btn-reset hero__btn">Free 30&nbsp;day trial</button>
+            <span class="hero__secure">SSL secured connection</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="section-offset services" id="services">
       <div class="container">
         <h2 class="section__title services__title">Services</h2>
         <p class="section__descr services__descr">
           Lionic guides you on&nbsp;making decisions for all aspects of&nbsp;your end-of-life plans.
         </p>
-        <ul class="services__items">
+        <ul class="list-reset services__items flex">
           <li class="services__item">
             <span>
               <svg class="services__item-icon" xmlns="http://www.w3.org/2000/svg" width="68" height="66" viewBox="0 0 68 66" fill="none">
@@ -148,10 +149,10 @@
       </div>
     </section>
 
-    <section class="articles" id="articles">
+    <section class="section-offset articles" id="articles">
       <div class="container">
         <h2 class="section__title article__title">Articles</h2>
-        <ul class="articles__items">
+        <ul class="list-reset articles__items">
           <li class="articles__item">
             <article class="blog-preview">
               <img class="blog-preview__image" src="images/articles-1.jpg" alt="Blog photo 1">
@@ -216,10 +217,10 @@
 
     </section>
 
-    <section class="clients" id="clients">
+    <section class="section-offset clients" id="clients">
       <div class="container">
         <h2 class="section__title clients__title">Clients</h2>
-        <ul class="clients__items">
+        <ul class="list-reset clients__items">
           <li class="clients__item">
             <p class="clients__text">
               Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit esse molestie consequat, vel illum dolore eu&nbsp;feugiat nulla facilisis at&nbsp;vero eros et&nbsp;accumsan et&nbsp;iusto odio dignissim qui blandit odio dignissim qui blandit molestie consequat.
@@ -271,11 +272,11 @@
       </div>
     </section>
 
-    <section class="contacts" id="contacts">
+    <section class="section-offset contacts" id="contacts">
       <div class="container">
         <h2 class="section__title contacts__title">Contacts</h2>
         <address class="contacts__address">
-          <ul class="contacts__items">
+          <ul class="list-reset contacts__items">
             <li class="contacts__item">
               <strong class="contacts__caption">Visit us</strong>
               <div class="contacts__descr">
@@ -303,7 +304,7 @@
       </div>
     </section>
 
-    <section class="join-us" id="join-us">
+    <section class="section-offset join-us" id="join-us">
       <div class="container">
         <h2 class="section__title join-us__title">
           Join us
