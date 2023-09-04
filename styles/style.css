@@ -63,6 +63,8 @@ a {
 
 img {
   max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 /* glob */
@@ -254,10 +256,12 @@ img {
   gap: 30px;
 }
 
+.blog-preview {
+  height: 100%;
+}
+
 .blog-preview__image {
-  object-fit: cover;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 3px 0 0 3px;
 }
 
 .blog-preview__text {
@@ -265,8 +269,7 @@ img {
   min-width: 400px;
   border: 1px solid var(--borderCard-color);
   border-left: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 0 3px 3px 0;
 }
 
 .blog-preview__time {
@@ -278,9 +281,11 @@ img {
 .blog-preview__title {
   margin: 0;
   margin-bottom: 15px;
+  max-width: 214px;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.3;
+  word-wrap: break-word;
   color: var(--header-color);
 }
 
@@ -288,4 +293,111 @@ img {
   margin: 0;
   max-width: 210px;
   line-height: 1.5;
+  word-wrap: break-word;
 }
+
+
+/* clients */
+.clients__title {
+  margin-bottom: 42px;
+}
+
+.clients__items {
+  gap: 30px;
+}
+
+.clients__item {
+  padding: 50px 35px 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 370px;
+  border-radius: 5px;
+  border: 1px solid var(--borderCard-color);
+}
+
+.clients__text {
+  margin: 0;
+  margin-bottom: 32px;
+  max-width: 281px;
+  text-align-last: left;
+  line-height: 1.8;
+}
+
+.clients__user {
+  margin-top: auto;
+  padding: 24px 4px 0;
+  align-items: center;
+  border-top: 1px solid var(--borderCard-color);
+}
+
+.clients__avatar {
+  margin-right: 14px;
+  width: 72px;
+  overflow: hidden;
+}
+
+.clients__avatar img {
+  border: 2px solid var(--medium-blue);
+  border-radius: 100%;
+}
+
+.clients__info {
+  max-width: 135px;
+}
+
+.clients__name {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--header-color);
+}
+
+.clients__post {
+  line-height: 1.8;
+}
+
+/* contacts */
+.contacts__title {
+  margin-bottom: 107px;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__items {
+  gap: 30px;
+}
+
+.contacts__caption {
+  margin-bottom: 30px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--header-color);
+  text-transform: capitalize;
+}
+
+.contacts__item {
+  padding-top: 49px;
+  flex-direction: column;
+  width: 370px;
+  background-position: left top;
+  background-size: 29px 29px;
+  background-repeat: no-repeat;
+}
+
+.contacts__descr {
+  max-width: 215px;
+  line-height: 1.8;
+}
+
+.contacts__link {
+  display: block;
+  line-height: 1.6;
+}
+
+.contacts__link:not(:last-child) {
+  margin-bottom: 5px;
+}
+
