@@ -315,8 +315,8 @@
         </p>
 
         <form class="join-us__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <div class="form__top">
-            <div class="form__left">
+          <div class="form__top flex">
+            <div class="form__left flex">
               <label>
                 <input class="form__input" type="text" name="name" placeholder="Name" required>
               </label>
@@ -326,7 +326,7 @@
               <label>
                 <input class="form__input" type="tel" name="phone" placeholder="Phone" required>
               </label>
-              <select name="country">
+              <select class="form__input form__select" name="country">
                 <option value="Country" disabled selected>Country</option>
                 <option value="United Kingdom">United Kingdom</option>
                 <option value="United States">United States</option>
@@ -337,15 +337,15 @@
               </select>
             </div>
             <div class="form__right">
-              <textarea class="form__textarea" name="comment" placeholder="Comment"></textarea>
+              <textarea class="form__input form__textarea" name="comment" placeholder="Comment"></textarea>
             </div>
           </div>
-          <div class="form__bottom">
-            <div class="form__wrapper">
+          <div class="form__bottom flex">
+            <div class="form__wrapper flex">
               <button class="btn-reset btn form__btn">Get started</button>
-              <label>
+              <label class="form__checkbox">
                 <input type="checkbox" required>
-                I&nbsp;agree with the <a href="#">user agreement</a>
+                I&nbsp;agree with the <a class="form__link" href="#">user agreement</a>
               </label>
             </div>
           </div>
@@ -355,8 +355,8 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-left">
+    <div class="container footer__container flex">
+      <div class="footer__left flex">
         <a class="logo footer__logo" href="#">
           <img src="images/logo.svg" alt="Logotype Lionic company">
         </a>
@@ -364,9 +364,9 @@
           Copyright &copy;2017. All Right Reserved
         </small>
       </div>
-      <div class="footer-right">
+      <div class="footer__right flex">
         <nav class="footer__nav" aria-label="footer-nav">
-          <ul class="list-reset footer__list">
+          <ul class="list-reset footer__list flex">
             <li class="footer__item">
               <a class="footer__link" href="#">About us</a>
             </li>
@@ -381,7 +381,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list-reset social">
+        <ul class="list-reset social flex">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#" aria-label="twitter link"></a>
           </li>
