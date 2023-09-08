@@ -82,6 +82,8 @@ img {
 }
 
 .btn {
+  position: relative;
+  outline: none;
   padding: 16px 35px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -89,6 +91,43 @@ img {
   color: var(--active-text);
   background-color: var(--medium-blue);
   border-radius: 3px;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  border: 1px solid var(--light-blue);
+  border-radius: inherit;
+  outline: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.btn:focus::after {
+  opacity: 1;
+}
+
+.btn:hover {
+  background-color: var(--light-blue);
+  transition: background-color 0.3s ease-in;
+}
+
+.btn:active {
+  background-color: var(--dark-blue);
+  transition: background-color 0.3s ease-in;
+}
+
+.btn:active::after {
+  opacity: 0;
+}
+
+.btn:disabled {
+  background-color: var(--disabled-color);
+  cursor: not-allowed;
 }
 
 .flex {
