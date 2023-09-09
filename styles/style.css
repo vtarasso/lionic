@@ -361,16 +361,71 @@ img {
   height: 100%;
 }
 
-.blog-preview__image {
-  border-radius: 3px 0 0 3px;
+.blog-preview__link:focus {
+  background-color: var(--light-blue);
+  transition: background-color 0.3s ease-in;
+  outline: none;
+}
+
+.blog-preview__link:focus .blog-preview__title {
+  color: var(--active-text);
+}
+
+.blog-preview__link:focus .blog-preview__descr {
+  color: var(--active-text);
+}
+
+.blog-preview__link:focus .blog-preview__time {
+  color: var(--active-text);
+}
+
+
+.blog-preview__link:hover {
+  background-color: var(--medium-blue);
+  transition: background-color 0.3s ease-in;
+}
+
+.blog-preview__link:hover .blog-preview__title {
+  color: var(--active-text);
+}
+
+.blog-preview__link:hover .blog-preview__descr {
+  color: var(--active-text);
+}
+
+.blog-preview__link:hover .blog-preview__time {
+  color: var(--active-text);
+}
+
+.blog-preview__link:active {
+  background-color: var(--dark-blue);
+  transition: background-color 0.3s ease-in;
+}
+
+.blog-preview__link:hover .blog-preview__title {
+  color: var(--active-text);
+}
+
+.blog-preview__link:active .blog-preview__descr {
+  color: var(--active-text);
+}
+
+.blog-preview__link:active .blog-preview__time {
+  color: var(--active-text);
+}
+
+.blog-preview {
+  max-width: 570px;
+  border-radius: 3px;
+  border: 1px solid var(--borderCard-color);
+  border-left: none;
+  overflow: hidden;
 }
 
 .blog-preview__text {
   padding: 20px 30px;
   min-width: 400px;
-  border: 1px solid var(--borderCard-color);
-  border-left: none;
-  border-radius: 0 3px 3px 0;
+
 }
 
 .blog-preview__time {
@@ -494,12 +549,27 @@ img {
 }
 
 .contacts__link {
-  display: block;
+  display: inline-block;
   line-height: 1.6;
 }
 
 .contacts__link:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.contacts__link:focus {
+  outline: 1px solid var(--light-blue);
+  outline-offset: 3px;
+}
+
+.contacts__link:hover {
+  color: var(--light-blue);
+  transition: color 0.3s ease-in;
+}
+
+.contacts__link:active {
+  color: var(--dark-blue);
+  outline: none;
 }
 
 /* join-us */
