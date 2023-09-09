@@ -46,10 +46,11 @@ html {
   --header-color: #1c1c1c;
   --border-color: #dadada;
   --borderCard-color: #e4e4e4;
+  --gap : 30px;
 }
 
 body {
-  min-width: 1200px;
+  min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
@@ -138,6 +139,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1200px;
+  width: 100%;
 }
 
 .section-offset {
@@ -229,12 +231,12 @@ img {
 
 /* hero */
 .hero {
-  padding-top: 113px;
+  padding-top: 115px;
   padding-bottom: 134px;
   border-bottom: none;
   background-image: url("../images/hero-bg.jpg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -289,17 +291,19 @@ img {
   margin-bottom: 20px;
 }
 
+.services__items {
+  --offsets: 3;
+  gap: var(--gap);
+  flex-wrap: wrap;
+}
+
 .services__item {
   padding: 60px 30px;
   flex-direction: column;
   align-items: center;
-  width: 270px;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
   border-radius: 5px;
   border: 1px solid var(--borderCard-color);
-}
-
-.services__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .services__item:hover {
@@ -353,8 +357,13 @@ img {
 }
 
 .articles__items {
+  --offsets: 1;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--gap);
+}
+
+.articles__item {
+  width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1));
 }
 
 .blog-preview {
@@ -415,7 +424,6 @@ img {
 }
 
 .blog-preview {
-  max-width: 570px;
   border-radius: 3px;
   border: 1px solid var(--borderCard-color);
   border-left: none;
@@ -454,6 +462,10 @@ img {
 
 
 /* clients */
+.clients {
+  padding-top: 83px;
+  padding-bottom: 162px;
+}
 .clients__title {
   margin-bottom: 42px;
 }
@@ -513,6 +525,11 @@ img {
 }
 
 /* contacts */
+.contacts {
+  padding-top: 85px;
+  padding-bottom: 159px;
+}
+
 .contacts__title {
   margin-bottom: 107px;
 }
@@ -554,7 +571,7 @@ img {
 }
 
 .contacts__link:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .contacts__link:focus {
@@ -745,7 +762,7 @@ img {
 }
 
 .footer__nav {
-  margin-right: 56px;
+  margin-right: 53px;
 }
 
 .footer__item:not(:last-child) {
@@ -763,7 +780,7 @@ img {
 }
 
 .social__item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 27px;
 }
 
 .social__link {
