@@ -616,6 +616,21 @@ img {
   opacity: 0.6;
 }
 
+.form__input:focus {
+  outline: none;
+  border-color: var(--light-blue);
+  background-color: rgba(113, 167, 226, 0.2);
+}
+
+.form__input:hover {
+  border-color: var(--light-blue);
+  transition: border-color 0.3s ease-in;
+}
+
+.form__input:active {
+  border-color: var(--dark-blue);
+}
+
 .form__select {
   padding: 15px 23px;
   color: var(--header-color);
