@@ -471,14 +471,16 @@ img {
 }
 
 .clients__items {
-  gap: 30px;
+  --offsets: 2;
+  flex-wrap: wrap;
+  gap: var(--gap);
 }
 
 .clients__item {
   padding: 50px 35px 30px;
   flex-direction: column;
   justify-content: space-between;
-  width: 370px;
+  width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1));
   border-radius: 5px;
   border: 1px solid var(--borderCard-color);
 }
@@ -539,6 +541,8 @@ img {
 }
 
 .contacts__items {
+  --offsets: 2;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -554,7 +558,7 @@ img {
 .contacts__item {
   padding-top: 49px;
   flex-direction: column;
-  width: 370px;
+  width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1));
   background-position: left top;
   background-size: 29px 29px;
   background-repeat: no-repeat;
