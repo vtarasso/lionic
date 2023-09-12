@@ -4,7 +4,7 @@ index header+/hero+/services+/articles+/clients+/contacts+/join us+/footer+
 
 css(pixel perfect) header+/hero+/services+/articles+/clients+/contacts+/join us+/footer+ 
 
-adaptive 1200+/992+ -> 768/ 
+adaptive 1200+/992+/768+ -> 576(pixelperfect)/ 
 
 ui-kit - header__link+/btn+/services__item+/articles+/contacts+/form+/custom-checkbox+/footer-icon+
 

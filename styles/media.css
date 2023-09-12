@@ -77,4 +77,35 @@
     margin-bottom: var(--gap);
   }
 }
-/* 768px */
+
+@media (max-width: 768px) {
+  /* services */
+  .services__items {
+    --offsets: 1;
+  }
+
+  /* articles */
+  .blog-preview__link {
+    flex-direction: column;
+  }
+
+  /* form */
+  .form {
+    padding: 0;
+  }
+
+  /* footer */
+  .footer__item:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  .footer__nav {
+    margin-right: 25px;
+  }
+
+  .footer__link {
+    font-size: 1.4rem;
+  }
+}
+
+/* 576px mobile */

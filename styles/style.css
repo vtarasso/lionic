@@ -431,7 +431,6 @@ img {
 .blog-preview {
   border-radius: 3px;
   border: 1px solid var(--borderCard-color);
-  border-left: none;
   overflow: hidden;
 }
 
