@@ -189,16 +189,97 @@
     margin-bottom: 12px;
     height: 42px;
   }
+
+  /* articles */
+  .articles__title {
+    margin-bottom: 11px;
+
+  }
+  .articles__items {
+    --offsets: 0;
+  }
+
+  .blog-preview {
+    min-height: 191px;
+    border-radius: 5px;
+  }
+
+  .blog-preview__link {
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+
+  .blog-preview__image {
+    flex-shrink: 0;
+    width: 86px;
+    height: 100%;
+  }
+
+  .blog-preview__text {
+    padding: 13px;
+  }
+
+  .blog-preview__time {
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  .blog-preview__title {
+    margin-bottom: 4px;
+  }
   /* clients */
+  .clients__title {
+    margin-bottom: 15px;
+  }
+
   .clients__items {
     --offsets: 0;
   }
 
+  .clients__item {
+    padding: 18px
+  }
+
+  .clients__text {
+    margin-bottom: 31px;
+  }
+
+  .clients__user {
+    padding: 0;
+    padding-top: 25px;
+  }
+
+  .clients__name {
+    line-height: 1.3;
+  }
+
+  .clients__avatar {
+    margin-right: 12px;
+  }
+
   /* contacts*/
+  .contacts__title {
+    margin-bottom: 13px;
+  }
+
   .contacts__items {
     --offsets: 0;
   }
 
+  .contacts__item {
+    padding-top: 40px;
+  }
+
+  .contacts__caption {
+    margin-bottom: 9px;
+  }
+
+  /* join-us */
+  .join-us__title {
+    margin-bottom: 13px;
+    text-align: left;
+  }
   /* footer */
   .footer__right {
     flex-direction: column;
