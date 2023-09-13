@@ -374,15 +374,26 @@
 
   .footer__logo {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     width: 80px;
     align-self: start;
   }
 
   .footer__copyright {
-    padding: 15px 0;
+    position: relative;
+    padding: 17px 0;
     display: block;
     width: 100%;
     text-align: center;
+  }
+
+  .footer__copyright::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: calc(100% + 30px);
+    height: 1px;
+    background-color: var(--border-color);
   }
 }
